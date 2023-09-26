@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string("name",32);
             $table->string("email",120)->unique();
             $table->string('password');
+            $table->boolean("permisson")->default(1);
             $table->rememberToken();
             $table->timestamps();
         });
